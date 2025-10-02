@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    font-family: "Inter-Regular", sans-serif;
+
+    /* IMTS Design System - Enhanced Modern Orange Theme */
+    --background: 0 0% 100%;
+    --foreground: 222 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 20% 10%;
+
+    /* Orange Primary Color #FF6B00 - Enhanced */
+    --primary: 23 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 23 100% 45%;
+    --primary-light: 23 100% 60%;
+    --primary-dark: 23 100% 40%;
+    --primary-glow: 23 100% 97%;
+
+    /* Status Colors - Enhanced with better contrast */
+    --status-pending: 43 96% 56%;
+    --status-pending-foreground: 43 96% 15%;
+    --status-in-progress: 217 91% 60%;
+    --status-in-progress-foreground: 217 96% 15%;
+    --status-blocked: 0 84% 60%;
+    --status-blocked-foreground: 0 0% 100%;
+    --status-completed: 142 71% 45%;
+    --status-completed-foreground: 0 0% 100%;
+
+    --secondary: 222 15% 96%;
+    --secondary-foreground: 222 15% 12%;
+
+    --muted: 222 12% 96%;
+    --muted-foreground: 222 12% 45%;
+
+    --accent: 23 100% 96%;
+    --accent-foreground: 222 20% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 12% 90%;
+    --input: 222 12% 90%;
+    --ring: 23 100% 50%;
+
+    /* Enhanced Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(23 100% 50%) 0%, hsl(23 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(23 100% 50%) 0%, hsl(35 100% 55%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(222 12% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(222 12% 99%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.9), hsla(222 12% 99% / 0.8));
+
+    /* Enhanced Shadows - More depth and elegance */
+    --shadow-xs: 0 1px 2px 0 hsl(0 0% 0% / 0.03);
+    --shadow-sm: 0 2px 4px 0 hsl(0 0% 0% / 0.04);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.06), 0 2px 4px -2px hsl(0 0% 0% / 0.04);
+    --shadow-elevated: 0 10px 20px -5px hsl(0 0% 0% / 0.08), 0 8px 12px -6px hsl(0 0% 0% / 0.06);
+    --shadow-large: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 10px 15px -5px hsl(0 0% 0% / 0.08);
+    --shadow-orange: 0 10px 25px -5px hsl(23 100% 50% / 0.25);
+    --shadow-orange-sm: 0 4px 12px -2px hsl(23 100% 50% / 0.2);
+    --shadow-glow: 0 0 40px -8px hsl(23 100% 50% / 0.3);
+
+    --radius: 0.875rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 20% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 20% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 20% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 23 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 23 100% 55%;
+    --primary-light: 23 100% 60%;
+    --primary-dark: 23 100% 40%;
+    --primary-glow: 23 100% 20%;
+
+    --secondary: 222 15% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 222 15% 14%;
+    --muted-foreground: 222 10% 60%;
+
+    --accent: 23 100% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 15% 18%;
+    --input: 222 15% 18%;
+    --ring: 23 100% 50%;
+
+    --status-pending: 43 96% 56%;
+    --status-pending-foreground: 43 96% 85%;
+    --status-in-progress: 217 91% 60%;
+    --status-in-progress-foreground: 217 96% 85%;
+    --status-blocked: 0 84% 60%;
+    --status-blocked-foreground: 0 0% 100%;
+    --status-completed: 142 71% 45%;
+    --status-completed-foreground: 0 0% 100%;
+    
+    --sidebar-background: 222 15% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 23 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 15% 14%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 222 15% 16%;
+    --sidebar-ring: 23 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
