@@ -1,1 +1,5 @@
-﻿django\r\ndjangorestframework\r\ndjangorestframework-simplejwt\r\ndjango-cors-headers\r\npython-dotenv\r\n
+﻿django
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
+python-dotenv
